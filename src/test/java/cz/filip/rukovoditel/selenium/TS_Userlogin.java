@@ -402,10 +402,7 @@ public class TS_Userlogin {
         //
         //odstranění filtru
         najitPockatClicknoutXpath(driver, "//i[@title='Remove Filter']");
-        //vytvoření nového filtru
-        //WebElement CreateFilter = driver.findElement(By.xpath("//i[@class='fa fa-plus']"));
-        //new Actions(driver).moveToElement(CreateFilter).perform();
-        //najitPockatClicknoutXpath(driver, "//a[contains(text(),'For Entity:')]");
+
 
 
         //vybrání přednastaveného filteru NewAndWaiting
