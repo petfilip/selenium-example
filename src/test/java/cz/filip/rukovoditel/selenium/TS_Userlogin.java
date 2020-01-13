@@ -58,7 +58,7 @@ public class TS_Userlogin {
 
     @After
     public void tearDown() {
-       //driver.close();
+       driver.close();
     }
 
     @Test
@@ -108,7 +108,7 @@ public class TS_Userlogin {
 
         //then
 
-        Assert.assertEquals(driver.getPageSource().contains("No match for Username and/or Password."), true);
+        Assert.assertTrue(driver.getPageSource().contains("No match for Username and/or Password."));
     }
 
 
@@ -305,7 +305,7 @@ public class TS_Userlogin {
 
         najitPockatClicknoutXpath(driver, "//button[@class='btn btn-primary btn-primary-modal-action']");
         //Then
-        Assert.assertEquals(driver.getPageSource().contains("No Records Found"), true);
+        Assert.assertTrue(driver.getPageSource().contains("No Records Found"));
     }
 
     public static void najitPockatClicknoutXpath (WebDriver driver, String locateValue){
