@@ -44,7 +44,7 @@ public class TS_Userlogin {
     public void init() {
         ChromeOptions cho = new ChromeOptions();
        // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        boolean runOnTravis = false;
+        boolean runOnTravis = true;
         if (runOnTravis) {
             cho.addArguments("headless");
         } else {
